@@ -1,0 +1,9 @@
+<p *ngIf="!person"><em>Loading...</em></p>
+
+<div class="d-flex flex-row">
+  <img [src]="person.avatar_url" class="avatar" />
+  <div class="d-flex flex-column px-2">
+    <strong class="name">{{person.name}}</strong>
+    <p class="location">{{person.location}}</p>
+  </div>
+</div>

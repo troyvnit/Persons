@@ -1,0 +1,4 @@
+<h1>Top {{persons.length}} Github Users</h1>
+<p>Tap the username to see more info</p>
+<p *ngIf="!persons"><em>Loading...</em></p>
+<button type="button" class="btn btn-primary ml-1 mb-1" *ngFor="let person of persons" [routerLink]="'/person/' + person.login">{{person.login}}</button>
